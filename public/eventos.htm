@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+ 
+    <!-- Menu -->
+    <script type="text/javascript" src="http://localhost:8000/adm/js/menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8000/adm/css/menu.css">
+ 
+    <!-- Geral -->
+    <script type="text/javascript" src="http://localhost:8000/adm/js/geral.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8000/adm/css/geral.css">
+
+</head>
+<body>   
+    <div id="menuPrincipal" class="menu" style="width: 46px">
+        <a href="javascript:void(0)" class="botaoMenu" onclick="abrirMenu()">&plus;</a>
+        <a href="http://localhost:8000/admin/eventos"><i class="glyphicon glyphicon-calendar"></i><span class="legenda"> Eventos</span></a>
+        <a href="http://localhost:8000/admin/videos"><i class="glyphicon glyphicon-facetime-video"></i><span class="legenda"> Vídeos</span></a>
+    </div>
+
+    <div id="conteudo" class="conteudo">
+            <h1>Cadastro de Eventos</h1>
+
+<div class="btn btn-group">
+    <a class="btn btn-default sem-margem"href="#">Novo Evento</a>
+</div>
+<div class="row">
+<div class="col-md-2">
+<div class="evento">
+    <div class="dia"><span class="numero-dia">01</span></div>
+    <div class="mes-ano">02/2018</div>
+    <div class="dia-semana">Sábado</div>
+    <div class="descricao">Mais ou menos</div>
+    <div class="editar">Editar</div>
+    <div class="apagar">Apagar</div>
+</div>
+</div>
+
+
+<div class="col-md-2">
+<div class="evento">
+    <div class="dia"><span class="numero-dia">22</span></div>
+    <div class="mes-ano">02/2019</div>
+    <div class="dia-semana">Sábado</div>
+    <div class="descricao">teste de data sem atualização</div>
+    <div class="editar">Editar</div>
+    <div class="apagar">Apagar</div>
+</div>
+</div>
+
+
+<div class="col-md-2">
+<div class="evento">
+    <div class="dia"><span class="numero-dia">22</span></div>
+    <div class="mes-ano">02/2019</div>
+    <div class="dia-semana">Sábado</div>
+    <div class="descricao">teste de data sem atualização de novo</div>
+    <div class="editar">Editar</div>
+    <div class="apagar">Apagar</div>
+</div>
+</div>
+
+
+<div class="col-md-2">
+<div class="evento">
+    <div class="dia"><span class="numero-dia">22</span></div>
+    <div class="mes-ano">05/2019</div>
+    <div class="dia-semana">Sábado</div>
+    <div class="descricao">Só pra Deletar em Caso de Precisar mesmo</div>
+    <div class="editar">Editar</div>
+    <div class="apagar">Apagar</div>
+</div>
+</div>
+
+
+<div class="col-md-2">
+<div class="evento">
+    <div class="dia"><span class="numero-dia">22</span></div>
+    <div class="mes-ano">01/2056</div>
+    <div class="dia-semana">Sábado</div>
+    <div class="descricao">agora eu reiniciei, tem que dar certo</div>
+    <div class="editar">Editar</div>
+    <div class="apagar">Apagar</div>
+</div>
+</div>
+
+
+</div>
+<ul class="pagination">
+        
+                    <li><a href="http://localhost:8000/admin/eventos?page=1" rel="prev">&laquo;</a></li>
+        
+        
+                    
+            
+            
+                                                                        <li><a href="http://localhost:8000/admin/eventos?page=1">1</a></li>
+                                                                                <li class="active"><span>2</span></li>
+                                                        
+        
+                    <li class="disabled"><span>&raquo;</span></li>
+            </ul>
+
+
+    </div>
+</body>
