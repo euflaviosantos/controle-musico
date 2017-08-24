@@ -37,13 +37,14 @@
 <body>   
     <div id="menuPrincipal" class="menu" style="width: 46px">
         <a href="javascript:void(0)" class="botaoMenu" onclick="abrirMenu()">&plus;</a>
-        <a href="/admin/index"><i class="glyphicon glyphicon-home"></i><span class="legenda"> home</span></a>
+        <a href="/admin/index"><i class="glyphicon glyphicon-home"></i><span class="legenda"> Home</span></a>
         <a href="{{route('eventos.index')}}"><i class="glyphicon glyphicon-calendar"></i><span class="legenda"> Eventos</span></a>
         <a href="{{route('videos.index')}}"><i class="glyphicon glyphicon-facetime-video"></i><span class="legenda"> Vídeos</span></a>
+        <a href="{{Auth::logout()}}"><i class="glyphicon glyphicon-log-out"></i><span class="legenda"> Logout</span></a>
     </div>
 
     <div id="conteudo" class="conteudo">
-            @yield('content')
+    @yield('content')
     </div>
     <!--JavaScript Geral -->
     <script type="text/javascript" src="/adm/js/geral.js"></script>

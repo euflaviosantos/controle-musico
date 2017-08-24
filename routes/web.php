@@ -21,9 +21,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['middleware'=>'auth'], function(){
-    Route::get('/admin', function(){
-        return view('admin.index');
-    });
+    Route::get('/admin',  'HomeController@index');
     Route::get('/admin/index', 'HomeController@index');
     Route::resource('/admin/videos', 'VideoController');
     Route::resource('/admin/eventos', 'EventoController');    
