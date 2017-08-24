@@ -40,7 +40,8 @@
         <a href="/admin/index"><i class="glyphicon glyphicon-home"></i><span class="legenda"> Home</span></a>
         <a href="{{route('eventos.index')}}"><i class="glyphicon glyphicon-calendar"></i><span class="legenda"> Eventos</span></a>
         <a href="{{route('videos.index')}}"><i class="glyphicon glyphicon-facetime-video"></i><span class="legenda"> Vídeos</span></a>
-        <a href="{{Auth::logout()}}"><i class="glyphicon glyphicon-log-out"></i><span class="legenda"> Logout</span></a>
+        <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="glyphicon glyphicon-log-out"></i><span class="legenda"> Logout</span></a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
     </div>
 
     <div id="conteudo" class="conteudo">
